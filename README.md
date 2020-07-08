@@ -5,8 +5,12 @@ Create a new object Translator
 ```
 Translator translator = new Translator(new File("C:/myLanguageFolder"));
 ```
-You can create files in the language folder :
+You can create files in the language folder :  
+
+
 french.lang
+
+
 english.lang
 
 or use 
@@ -56,6 +60,10 @@ And in my file english.lang :
 myId=Hello
 ``` 
 The result is : 
+
+
 In English hello is said: Hello
+
+
 In French hello is said: Bonjour
 
