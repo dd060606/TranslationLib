@@ -35,5 +35,27 @@ translator.translate("myId1");
 ```
 translator.translate("myId"); return the text after = in the language file 
 
+# Example
+In my java class :
+``` 
+ Translator translator = new Translator(new File("D:/languages"));
 
+  //The default language it's english but you can change with translator.setDefaultLangue("french");
+  translator.selectDefaultLanguage();
+  System.out.println("In English hello is said: " + translator.translate("myId"));
+  
+  translator.selectLanguage("french");
+  System.out.println("In French hello is said: " + translator.translate("myId"));
+```
+In my file french.lang :
+``` 
+myId=Bonjour
+```
+And in my file english.lang : 
+```
+myId=Hello
+``` 
+The result is : 
+In English hello is said: Hello
+In French hello is said: Bonjour
 
